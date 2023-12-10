@@ -66,25 +66,13 @@ p {
   z-index: 5;
 }
 /* Apply styles for larger screens */
-@media screen and (min-width: 600px) {
-  /* Adjust styles for screens with a width of 600 pixels or more */
+@media screen and (min-width: 400px) {
+  /* Adjust styles for screens with a width of 400 pixels or less */
   body {
-    font-size: 18px; /* Adjust font size for larger screens */
+    font-size: 10px; /* Adjust font size for larger screens */
   }
 
   .modal {
-    max-width: 600px; /* Limit the modal width on larger screens */
-  }
-}
-
-/* Apply styles for smaller screens */
-@media screen and (max-width: 599px) {
-  /* Adjust styles for screens with a width of 599 pixels or less */
-  body {
-    font-size: 16px; /* Adjust font size for smaller screens */
-  }
-
-  .modal {
-    width: 90%; /* Set the modal width to 90% of the screen on smaller screens */
+    max-width:90%; /* Limit the modal width on larger screens */
   }
 }
