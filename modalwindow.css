@@ -65,14 +65,34 @@ p {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
-/* Apply styles for larger screens */
-@media screen and (min-width: 400px) {
-  /* Adjust styles for screens with a width of 400 pixels or less */
+@media screen and (max-width: 450px) {
   body {
-    font-size: 10px; /* Adjust font size for larger screens */
+    font-size: 12px; /* Adjust base font size for smaller screens */
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+  }
+
+  .showModal {
+    margin: 0.5rem; /* Adjust button margin for smaller screens */
+    padding: 1rem; /* Adjust button padding for smaller screens */
+    font-size: 0.9rem; /* Adjust button font size for smaller screens */
   }
 
   .modal {
-    max-width:90%; /* Limit the modal width on larger screens */
+    padding: 2rem; /* Adjust modal padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust modal title font size for smaller screens */
+    margin-bottom: 1rem; /* Adjust margin for smaller screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust modal content font size for smaller screens */
+    margin-bottom: 1rem; /* Adjust margin for smaller screens */
+  }
+
+  .closeModal {
+    right: 1rem; /* Adjust close button position for smaller screens */
+    font-size: 2rem; /* Adjust close button font size for smaller screens */
   }
 }
